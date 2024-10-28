@@ -1,0 +1,253 @@
+/* Добавляем стили для body чтобы убрать горизонтальный скролл */
+body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.slider-block {
+    max-width: 1240px;
+    margin: 0 auto;
+    position: relative;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.slider-block-title {
+    font-family: "PP Neue Montreal", sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 125%;
+    color: #010101;
+    margin-bottom: 60px;
+}
+
+.main-slider {
+    width: 100%;
+    overflow: visible;
+    margin-right: 0;
+}
+
+.main-slider-slide {
+    max-width: 388px;
+    width: 100%;
+}
+
+.main-slider-item {
+    padding: 24px 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    min-height: 648px;
+}
+
+.main-slider-item-content {
+    display: flex;
+    flex-direction: column;
+  	font-family: "PP Neue Montreal", sans-serif;
+}
+
+.main-slider-pretitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 18px;
+}
+
+.main-slider-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 12px;
+}
+
+.main-slider-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+  	color: #e4e4e4;
+}
+
+.main-slider-item-image {
+    display: flex;
+    align-items: flex-end;
+}
+
+.custom-slider-btns {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    position: absolute;
+    top: 17px;
+    right: 100px;
+}
+
+.custom-button-prev,
+.custom-button-next {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #e4e4e4;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  	transition: all .3s linear;
+}
+
+.custom-button-prev svg,
+.custom-button-next svg {
+    stroke: #010101;
+  	transition: all .3s linear;
+}
+
+.custom-button-prev:not(.swiper-button-disabled):hover svg,
+.custom-button-next:not(.swiper-button-disabled):hover svg {
+    stroke: #fefefe;
+}
+
+.custom-button-prev:not(.swiper-button-disabled):hover,
+.custom-button-next:not(.swiper-button-disabled):hover {
+	background-color: #010101;
+}
+
+.swiper-button-disabled svg {
+    stroke: #838383;
+}
+
+.white-text .main-slider-pretitle,
+.white-text .main-slider-title {
+    color: #fefefe;
+}
+
+.white-text .main-slider-text {
+    color: #f5f5f5;
+}
+
+.black-text .main-slider-pretitle,
+.black-text .main-slider-title {
+    color: #010101;
+}
+
+.black-text .main-slider-text {
+    color: #303030;
+}
+
+
+.main-slider-slide:first-child .main-slider-item {
+    background-color: #010101;
+}
+
+.main-slider-slide:first-child .main-slider-text {
+    color: #e4e4e4 !important;
+}
+
+.main-slider-slide:nth-child(2) .main-slider-item {
+    background-color: #b253ff;
+}
+
+.main-slider-slide:nth-child(3) .main-slider-item {
+    background-color: #ff9737;
+}
+
+.main-slider-slide:nth-child(4) .main-slider-item {
+    background-color: #41a3f4;
+}
+
+.main-slider-slide:nth-child(5) .main-slider-item {
+    background-color: #ffcd1f;
+}
+
+.main-slider-slide:nth-child(6) .main-slider-item {
+    background-color: #d83681;
+}
+
+.main-slider-slide:nth-child(7) .main-slider-item {
+    background-color: #e12f2f;
+}
+
+.main-slider-slide:nth-child(8) .main-slider-item {
+    background-color: #0cd916;
+}
+
+.main-slider-slide:nth-child(9) .main-slider-item {
+    background-color: #2b67ff;
+}
+
+.main-slider-slide:nth-child(10) .main-slider-item {
+    background-color: #fc5f40;
+}
+
+.main-slider-slide:nth-child(11) .main-slider-item {
+    background-color: #7a54ff;
+}
+
+@media screen and (max-width: 1279px) {
+    .slider-block {
+        max-width: 1240px;
+        padding: 0 15px;
+        position: relative;
+    }
+}
+
+
+@media screen and (max-width: 959px) {
+    .custom-slider-btns {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-slider-item {
+        padding: 18px 18px 0 18px;
+        min-height: 548px;
+    }
+
+    .slider-block-title {
+        font-size: 30px;
+        max-width: 200px;
+        margin-bottom: 48px;
+    }
+
+    .main-slider-slide {
+        max-width: 300px;
+    }
+
+    .main-slider-pretitle {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .main-slider-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .main-slider-text {
+        font-size: 14px;
+    }
+
+    .main-slider-item-image svg{
+        width: 280px;
+        height: 348px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .main-slider-slide {
+        max-width: 290px;
+    }
+}
+
+/* Добавляем стиль для обертки слайдов */
+.main-slider-wrapper {
+    width: 100%;
+    display: flex;
+    /* Добавляем отступ справа для последнего слайда */
+    padding-right: 15px;
+    box-sizing: border-box;
+}
